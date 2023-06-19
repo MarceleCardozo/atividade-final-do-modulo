@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.banner-initial {
+  background: url(../images/banner-initial.png) center top/cover no-repeat fixed;
+}
+
+.btn-red {
+  background-color: rgb(212, 20, 20);
+  color: white;
+  padding: 20px 35px;
+  font-weight: 700;
+  font-size: 25px;
+}
