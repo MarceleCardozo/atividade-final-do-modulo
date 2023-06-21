@@ -22,3 +22,22 @@ body {
 .divider {
   border-bottom: 3px solid gray;
 }
+
+.accordion-item {
+  border: 5px solid black;
+}
+
+.accordion-button {
+  background-color: #303030 !important;
+  color: white;
+  padding: 25px !important;
+  font-size: 26px;
+}
+
+.accordion-button::after {
+  background-image: url(../images/add.svg) !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: white;
+}
