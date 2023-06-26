@@ -1,0 +1,17 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: black;
+}
+
+.banner-home {
+  background: url(../images/growcast-01.png) center top/cover no-repeat;
+}
+
+.home-growcast {
+  align-items: end;
+  min-height: 600px;
+}
