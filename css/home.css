@@ -15,3 +15,7 @@ body {
   align-items: end;
   min-height: 600px;
 }
+
+.col-movie {
+  min-height: 230px;
+}
