@@ -9,6 +9,7 @@ body {
 
 .banner-home {
   background: url(../images/growcast-01.png) center top/cover no-repeat;
+  min-height: 720px;
 }
 
 .home-growcast {
@@ -16,6 +17,41 @@ body {
   min-height: 600px;
 }
 
+.link-title {
+  text-decoration: none;
+  font-size: 20px;
+  color: #ffffff;
+}
+
 .col-movie {
   min-height: 230px;
+}
+
+.card {
+  background-color: black;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.custom-link {
+  text-decoration: none;
+}
+
+.card-hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.card-hover .card-body {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.card-body {
+  opacity: 0;
+  color: white;
+  transition: opacity 0.3s ease;
 }
