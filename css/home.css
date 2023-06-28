@@ -61,3 +61,39 @@ body {
   margin-left: 20px;
   cursor: pointer;
 }
+
+.modal-header-movie {
+  border-bottom: none;
+}
+
+.modal-content {
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+}
+.modal-body {
+  padding: 0;
+}
+
+.modal-dialog {
+  max-width: 560px;
+  margin: 30px auto;
+}
+
+.modal-dialog::before {
+  content: "";
+  display: block;
+}
+
+.ratio {
+  position: relative;
+  width: 100%;
+}
+
+.divider {
+  border-bottom: 3px solid gray;
+}
+
+footer {
+  color: gray;
+}
