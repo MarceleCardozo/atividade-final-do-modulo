@@ -23,7 +23,7 @@ body {
   color: #ffffff;
 }
 
-.col-movie {
+.col-video {
   min-height: 230px;
 }
 
@@ -54,4 +54,10 @@ body {
   opacity: 0;
   color: white;
   transition: opacity 0.3s ease;
+}
+
+.detail-video {
+  color: white;
+  margin-left: 20px;
+  cursor: pointer;
 }
