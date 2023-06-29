@@ -33,7 +33,7 @@ function renderVideos() {
     categories[category].forEach((item) => {
       html += `
         <div class="col-12 col-sm-6 col-md-3 col-video">
-        <div class="card" style="width: 18rem" onmouseenter="showDetail(this)" onmouseleave="closeDetail(this)">
+        <div class="card" onmouseenter="showDetail(this)" onmouseleave="closeDetail(this)">
         <img src="${item.img}" class="card-img-top img-fluid" alt="..." />
         <div class="card-body">
           <p class="custom-link video-link card-title detail-video" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="openVideoModal(event, '${item.link}')">
