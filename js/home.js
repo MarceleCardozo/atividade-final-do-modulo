@@ -15,21 +15,25 @@ function renderVideos() {
   for (const category in categories) {
     const categoryId = category.toLowerCase().replace(/\s/g, "-");
     html += `
-    <div id="${categoryId}" class="col-12 pt-3">
-      <p>
-        <a href="#${categoryId}" class="link-title fw-bold">${category}
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
-            <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-          </svg>
-        </a>
-      </p>
-    </div>
-    `;
+    <div class="col-12">
+      <div class="container">
+        <div class="row pb-5" id="${categoryId}">
+          <div class="col-12 pt-2">
+            <p>
+              <a href="#${categoryId}" class="link-title fw-bold">${category}
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill" viewBox="0 0 16 16">
+                  <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+                </svg>
+              </a>
+            </p>
+          </div>
+          <div class="col-12">
+            <div id="cards-${categoryId}" class="row">`;
 
     categories[category].forEach((item) => {
       html += `
-    <div class="col-12 col-sm-6 col-md-3 col-video">
-      <div class="card" style="width: 18rem" onmouseenter="showDetail(this)" onmouseleave="closeDetail(this)">
+        <div class="col-12 col-sm-6 col-md-3 col-video">
+        <div class="card" style="width: 18rem" onmouseenter="showDetail(this)" onmouseleave="closeDetail(this)">
         <img src="${item.img}" class="card-img-top img-fluid" alt="..." />
         <div class="card-body">
           <p class="custom-link video-link card-title detail-video" data-bs-toggle="modal" data-bs-target="#videoModal" onclick="openVideoModal(event, '${item.link}')">
@@ -41,9 +45,15 @@ function renderVideos() {
           </p>
         </div>
       </div>
-    </div>
-    `;
+        </div>`;
     });
+
+    html += `
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>`;
   }
 
   rowVideos.innerHTML = html;
