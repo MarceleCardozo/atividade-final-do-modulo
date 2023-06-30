@@ -62,6 +62,44 @@ body {
   font-size: 12px;
 }
 
+@media (max-width: 767px) {
+  .card-hover {
+    width: auto;
+    position: static;
+    transition: none;
+    z-index: auto;
+  }
+
+  .card-hover .card-body {
+    opacity: 1;
+  }
+
+  .card-body {
+    display: block;
+    opacity: 1;
+    color: white;
+    padding: 0;
+    padding-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-video:hover .card-body {
+    display: block;
+  }
+
+  .card-hover {
+    width: 350px;
+    position: absolute;
+    transition: none;
+    z-index: 1;
+  }
+
+  .card-hover .card-body {
+    opacity: 1;
+  }
+}
+
 .detail-video {
   color: white;
   margin-left: 20px;
